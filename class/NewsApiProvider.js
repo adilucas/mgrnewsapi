@@ -8,7 +8,7 @@ class NewsApiProvider {
     }
 
     async getTopList (category, limit) {
-        let url = `${config.hostname}/top-headlines?country=us&apiKey=${this.API_KEY}`;
+        let url = `${config.hostname}/top-headlines?country=pl&apiKey=${this.API_KEY}`;
 
         if (category) url += `&category=${category}`;
         if (limit) url += `&pageSize=${limit}`;
